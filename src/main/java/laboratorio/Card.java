@@ -4,6 +4,13 @@ public class Card extends ArrayList<Object>{
     // Declaracion
     public ArrayList<Object> carta;
     // Métodos
+    public int numCards(){
+        return carta.size();
+    }
+    public int findTotalCards(){
+        int tamanio = carta.size()-1;
+        return tamanio * tamanio + tamanio + 1;
+    }
     // Constructor
     public Card() {
         this.carta = new ArrayList<>();
