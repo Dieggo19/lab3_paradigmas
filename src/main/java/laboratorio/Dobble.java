@@ -1,6 +1,20 @@
 package laboratorio;
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Dobble {
+    //atributos a implementar
+    public ArrayList<Card> cardsSet;
+    public ArrayList<String> elementos;
+
+    //constructor
+    public Dobble(ArrayList<String> elements, Integer numE, Integer maxC){
+        this.cardsSet = setConstructor(elements, numE, maxC);
+        this.elementos = elements;
+        Collections.shuffle(cardsSet);
+    }
 
     //metodos
     //verifica si el numero ingresado es primo o no
@@ -15,7 +29,7 @@ public class Dobble {
         return prime;
     }
     //creacion del set de cartas en base a la pagina entregada en el laboratorio
-    public ArrayList<Card> setConstructor(ArrayList<Object> elements, Integer numE, Integer maxC){
+    public ArrayList<Card> setConstructor(ArrayList<String> elements, Integer numE, Integer maxC){
         int n = numE - 1;
         Card Carta1 = new Card();
         ArrayList<Card> Cartas = new ArrayList<>();
@@ -57,4 +71,9 @@ public class Dobble {
         }
     }
 
+    //sobreescribe un metodo
+    @Override
+    public String toString(){
+        return cardsSet + "\n" + elementos;
+    }
 }
