@@ -18,6 +18,6 @@ public class Menu {
         Dobble constructor = new Dobble(ejemploLista, 3,3);
         System.out.println("el constructor y las cartas son:");
         System.out.println(constructor);
-
+       //Dobble missing = new missingCards();
     }
 }

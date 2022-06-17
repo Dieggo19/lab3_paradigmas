@@ -31,4 +31,16 @@ public class Player {
         this.apellido = apellido;
     }
 
-}
+    //implementacion de comparadores de nombres, deberia ser un metodo el cual retorne booleanos para
+    //verificar el ingreso de usuarios.
+
+    @Override
+    public boolean igualdad(Object Carta_one){
+        //se crean los comparadores y sus respectivos returns
+        if(this == Carta_one){
+            return (true);
+        }
+        else if(Carta_one == null){
+            return (false);
+        }
+} //falta verificar mas casos

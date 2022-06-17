@@ -36,6 +36,7 @@ public class Card extends ArrayList<Object>{
     //sobreescribir el toString de la superclase object
     @Override
     public String toString(){
+
         return super.toString();
     }
 }

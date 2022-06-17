@@ -71,9 +71,17 @@ public class Dobble {
         }
     }
 
+    //falta por implementar
+    public ArrayList<Card> missingCards(){
+        Card PrimeraCarta = cardsSet.get(0);
+        ArrayList<Card> oneauxiliar = setConstructor(elementos, PrimeraCarta.size(), -1);
+        oneauxiliar.removeAll(cardsSet);
+        return oneauxiliar;
+    }
+
     //sobreescribe un metodo
     @Override
     public String toString(){
-        return cardsSet + "\n" + elementos;
+        return cardsSet + "\n" + elementos + "\n" ;
     }
 }
