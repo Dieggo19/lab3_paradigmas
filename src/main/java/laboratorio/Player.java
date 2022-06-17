@@ -35,12 +35,18 @@ public class Player {
     //verificar el ingreso de usuarios.
 
     @Override
-    public boolean igualdad(Object Carta_one){
+    public boolean equals(Object O){
         //se crean los comparadores y sus respectivos returns
-        if(this == Carta_one){
+        if(this == O){
             return (true);
         }
-        else if(Carta_one == null){
+        else if(O == null){
             return (false);
         }
-} //falta verificar mas casos
+        else if(O.getClass() != Player.class){
+            return (false);
+        }
+        Player player = (Player) O;
+        return player.getNombre().equals(this.nombre);
+    }
+}
