@@ -1,4 +1,4 @@
 package laboratorio;
 import java.util.ArrayList;
-public class DobbleGame {
+public class DobbleGame implements DobbleGameInterface {
 }

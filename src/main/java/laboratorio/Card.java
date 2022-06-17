@@ -1,6 +1,6 @@
 package laboratorio;
 import java.util.ArrayList;
-public class Card extends ArrayList<Object>{
+public class Card extends ArrayList<Object> implements CardInterface {
     // Declaracion
     public ArrayList<Object> carta;
     // Métodos

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-public class Dobble {
+public class Dobble implements DobbleInterface {
     //atributos a implementar
     public ArrayList<Card> cardsSet;
     public ArrayList<String> elementos;

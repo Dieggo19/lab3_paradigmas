@@ -1,7 +1,7 @@
 package laboratorio;
 import java.util.ArrayList;
 
-public class Player {
+public class Player implements PlayerInterface {
     //Atributos del player
     private String nombre;
     private String apellido;
